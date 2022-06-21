@@ -33,4 +33,4 @@ With this project I am consolidating my knowledge about React (class based compo
 
 ## Author
 
-- Website - [Daniela Darnea](https://mdanieladla.github.io/portfolio/)
+Website - [Daniela Darnea](https://mdanieladla.github.io/portfolio/)
