@@ -1,4 +1,5 @@
 .image-list{
+    margin-left: 20%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 0 10px;
@@ -7,4 +8,20 @@
 
 .image-list img {
     width: 250px;
+}
+
+.segment{
+    background-color: #f0d9c3;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .image-list{
+        margin-left: 10%;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .image-list{
+        margin-left: 1%;
+    }
 }
