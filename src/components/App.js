@@ -1,8 +1,11 @@
 import React from 'react';
-// import { ReactDOM } from 'react';
 import unsplash from '../api/unsplash';
 import SearchBar from './SearchBar';
 import ImageList from './ImageList';
+//images
+import camera from '../images/camera.svg';
+//Styles
+import '../styles/app.css';
 
 class App extends React.Component {
   state = { images: [] };
@@ -16,7 +19,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='ui container' style={{ marginTop: '10px' }}>
+      <div className='ui container'>
+        <div className='title-div'>
+          <img src={camera} className='camera-svg' alt='camera svg' />
+          <h1 className='title'>Image browser</h1>
+          <img src={camera} className='camera-svg' alt='camera-svg' />
+        </div>
+
         <SearchBar onSubmit={this.handleSearchSubmit} />
         <ImageList images={this.state.images} />
       </div>
